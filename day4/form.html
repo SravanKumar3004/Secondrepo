@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- video and audio  -->
+
+    <!-- Form in HTML  -->
+    <!-- form is to collect the data from the user  -->
+
+    <fieldset>
+        <legend>User Information</legend>
+      <form action="">
+        <label for="Fname">FirstName:</label>
+        <input
+          type="text"
+          name="Firstname"
+          id="Fname"
+          placeholder="enter your firstname..."
+          required
+          autocomplete="off"
+        />
+        <br />
+        <br />
+
+        <label for="Lname">LastName:</label>
+        <input
+          type="text"
+          name="LastName"
+          id="Lname"
+          placeholder="enter your lastname..."
+          required
+        />
+        <br />
+        <br />
+
+        <label for="Phone">Mobile:</label>
+        <input
+          type="tel"
+          name="MobileNumber"
+          id="Phone"
+          placeholder="enter your phonenumber..."
+        />
+        <br />
+        <br />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enter you password"
+        />
+        <br />
+        <br />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="enter your emailid"
+        />
+        <br />
+        <br />
+
+        <label for="Address">Address</label><br />
+        <textarea name="Address" id="Address"></textarea> <br />
+        <br />
+
+        <!-- Radio and Checkbox  -->
+        <!-- In HTML, radio button is to select only one option but checkbox is to select one or multiple options  -->
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="Gender" id="gender" value="Male" />Male
+        <input type="radio" name="Gender" id="gender" value="Female" />Female
+        <input
+          type="radio"
+          name="Gender"
+          id="gender"
+          value="Non-Binary"
+        />Non-Binary <br />
+        <br />
+
+        <label for="Languages">Languages</label>
+
+        <input
+          type="checkbox"
+          name="Language1"
+          id="Languages"
+          value="English"
+        />English
+        <input
+          type="checkbox"
+          name="Language2"
+          id="Languages"
+          value="Telugu"
+        />Telugu
+        <input
+          type="checkbox"
+          name="Language3"
+          id="Languages"
+          value="Hindi"
+        />Hindi
+        <input
+          type="checkbox"
+          name="Language4"
+          id="Languages"
+          value="Gujarati"
+        />Gujarati
+        <input
+          type="checkbox"
+          name="Language5"
+          id="Languages"
+          value="Marathi"
+        />Marathi
+        <input
+          type="checkbox"
+          name="Language6"
+          id="Languages"
+          value="Oriya"
+        />Oriya <br />
+        <br />
+
+        <label for="pet-select">Choose a pet:</label>
+
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+        </select>
+
+        <label for="start">Start date:</label>
+        <input
+          type="date"
+          id="start"
+          name="trip-start"
+          value="2024-05-22"
+          min="2018-01-01"
+          max="2024-12-31"
+        />
+        <br />
+        <br />
+
+        <label for="avatar">Choose a profile picture:</label>
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        />
+
+
+        <input type="submit" value="SubmitLater">
+        <input type="reset" value="reset">
+        <button type="submit">SubmitNow</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
